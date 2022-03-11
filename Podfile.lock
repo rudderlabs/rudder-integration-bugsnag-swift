@@ -1,0 +1,30 @@
+PODS:
+  - Bugsnag (6.16.4)
+  - RudderBugsnag (1.0.0):
+    - Bugsnag (= 6.16.4)
+    - RudderStack (~> 1.0)
+  - RudderStack (1.0.0)
+
+DEPENDENCIES:
+  - Bugsnag (= 6.16.4)
+  - RudderBugsnag (from `.`)
+  - RudderStack (from `~/Documents/Rudder/RudderStack-Cocoa/`)
+
+SPEC REPOS:
+  trunk:
+    - Bugsnag
+
+EXTERNAL SOURCES:
+  RudderBugsnag:
+    :path: "."
+  RudderStack:
+    :path: "~/Documents/Rudder/RudderStack-Cocoa/"
+
+SPEC CHECKSUMS:
+  Bugsnag: a9dd47687a0c45046abd9edc9fdf04822a8230b9
+  RudderBugsnag: ea798f2e75ae8625aa960123fd88059a9571ca48
+  RudderStack: 705069efa869eadfe3a5aee0300dd38fa20cfbeb
+
+PODFILE CHECKSUM: 6b36ab8c59fede1847eaf9e6588f37d16221c308
+
+COCOAPODS: 1.11.2
