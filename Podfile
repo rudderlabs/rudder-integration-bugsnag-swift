@@ -1,10 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
 workspace 'RudderBugsnag.xcworkspace'
 use_frameworks!
 inhibit_all_warnings!
-platform :ios, '12.0'
+platform :ios, '13.0'
 
 def shared_pods
-    pod 'RudderStack', :path => '~/Documents/Rudder/RudderStack-Cocoa/'
+    pod 'RudderStack', :path => '~/Documents/Rudder/RudderStack-Swift/'
 end
 
 target 'SampleAppObjC' do

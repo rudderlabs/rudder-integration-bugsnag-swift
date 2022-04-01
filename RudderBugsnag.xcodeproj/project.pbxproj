@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80E3FA02FFB0485955332B26 /* Pods_RudderBugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1761B01EB7C7011742F1B2 /* Pods_RudderBugsnag.framework */; };
+		8A6AD5A8BA9B1915EF46A8BB /* Pods_RudderBugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA9FF091E8620C9A904EF9A /* Pods_RudderBugsnag.framework */; };
 		EDB7216827DA35CF000EE8C4 /* RSBugsnagDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB7216727DA35CF000EE8C4 /* RSBugsnagDestination.swift */; };
 		EDD7FFED2768809E002C356D /* RudderBugsnag.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD7FFEC2768809E002C356D /* RudderBugsnag.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84E800E74C031C9EE8A797A8 /* Pods-RudderBugsnag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderBugsnag.debug.xcconfig"; path = "Target Support Files/Pods-RudderBugsnag/Pods-RudderBugsnag.debug.xcconfig"; sourceTree = "<group>"; };
-		AD1761B01EB7C7011742F1B2 /* Pods_RudderBugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderBugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA322B277C3709F656009842 /* Pods-RudderBugsnag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderBugsnag.release.xcconfig"; path = "Target Support Files/Pods-RudderBugsnag/Pods-RudderBugsnag.release.xcconfig"; sourceTree = "<group>"; };
+		4AA9FF091E8620C9A904EF9A /* Pods_RudderBugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderBugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B1FE454D52CC096F3E09EF /* Pods-RudderBugsnag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderBugsnag.release.xcconfig"; path = "Target Support Files/Pods-RudderBugsnag/Pods-RudderBugsnag.release.xcconfig"; sourceTree = "<group>"; };
+		DDF740C0CB0D27B831F95AF8 /* Pods-RudderBugsnag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderBugsnag.debug.xcconfig"; path = "Target Support Files/Pods-RudderBugsnag/Pods-RudderBugsnag.debug.xcconfig"; sourceTree = "<group>"; };
 		EDB7216627DA35B0000EE8C4 /* RudderBugsnag.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RudderBugsnag.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EDB7216727DA35CF000EE8C4 /* RSBugsnagDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSBugsnagDestination.swift; sourceTree = "<group>"; };
 		EDD7FFE027687FEF002C356D /* RudderBugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderBugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,28 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80E3FA02FFB0485955332B26 /* Pods_RudderBugsnag.framework in Frameworks */,
+				8A6AD5A8BA9B1915EF46A8BB /* Pods_RudderBugsnag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36149C5EE0013C0574125EF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA9FF091E8620C9A904EF9A /* Pods_RudderBugsnag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41221CFE55FF565F051A3C02 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				84E800E74C031C9EE8A797A8 /* Pods-RudderBugsnag.debug.xcconfig */,
-				DA322B277C3709F656009842 /* Pods-RudderBugsnag.release.xcconfig */,
+				DDF740C0CB0D27B831F95AF8 /* Pods-RudderBugsnag.debug.xcconfig */,
+				67B1FE454D52CC096F3E09EF /* Pods-RudderBugsnag.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		505E556C25CEE079CAB76AA5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AD1761B01EB7C7011742F1B2 /* Pods_RudderBugsnag.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EDD7FFD627687FEF002C356D = {
@@ -64,7 +64,7 @@
 				EDD7FFEA2768809E002C356D /* Sources */,
 				EDD7FFE127687FEF002C356D /* Products */,
 				41221CFE55FF565F051A3C02 /* Pods */,
-				505E556C25CEE079CAB76AA5 /* Frameworks */,
+				36149C5EE0013C0574125EF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,7 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDD7FFE727687FEF002C356D /* Build configuration list for PBXNativeTarget "RudderBugsnag" */;
 			buildPhases = (
-				8FB3A109E8C780C117F258A4 /* [CP] Check Pods Manifest.lock */,
+				2FC1F6C8BEA2AC7CFE4C433B /* [CP] Check Pods Manifest.lock */,
 				EDD7FFDB27687FEF002C356D /* Headers */,
 				EDD7FFDC27687FEF002C356D /* Sources */,
 				EDD7FFDD27687FEF002C356D /* Frameworks */,
@@ -178,7 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8FB3A109E8C780C117F258A4 /* [CP] Check Pods Manifest.lock */ = {
+		2FC1F6C8BEA2AC7CFE4C433B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -324,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -338,8 +338,9 @@
 		};
 		EDD7FFE827687FEF002C356D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84E800E74C031C9EE8A797A8 /* Pods-RudderBugsnag.debug.xcconfig */;
+			baseConfigurationReference = DDF740C0CB0D27B831F95AF8 /* Pods-RudderBugsnag.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -351,14 +352,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderFacebookAppEvents;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.Bugsnag;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -371,8 +372,9 @@
 		};
 		EDD7FFE927687FEF002C356D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA322B277C3709F656009842 /* Pods-RudderBugsnag.release.xcconfig */;
+			baseConfigurationReference = 67B1FE454D52CC096F3E09EF /* Pods-RudderBugsnag.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -384,14 +386,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderFacebookAppEvents;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.Bugsnag;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";

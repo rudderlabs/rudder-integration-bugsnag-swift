@@ -27,8 +27,9 @@
     
     RSClient *client = [[RSClient alloc] initWithConfig:config];
     
-    [client addWithDestination:[[RudderBugsnagDestination alloc] init]];
-    [client track:@"Track 1" properties:NULL option:NULL];
+    [client addDestination:[[RudderBugsnagDestination alloc] init]];
+    [client track:@"Track 1"];
+    
     return YES;
 }
 

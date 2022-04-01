@@ -26,8 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         client = RSClient(config: config)
 
-        client?.add(destination: RudderBugsnagDestination())
+        client?.addDestination(RudderBugsnagDestination())
         client?.track("Track 1")
+        
+        client?.identify("test_user_id", traits: ["name": "test_name", "email": "mail@mail.com", "phone": "12345678"])
         
         return true
     }
