@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RudderStack
+import Rudder
 import RudderBugsnag
 
 @UIApplicationMain
@@ -24,13 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .trackLifecycleEvents(true)
             .recordScreenViews(true)
         
-        client = RSClient(config: config)
+        RSClient.sharedInstance().configure(with: config)
 
-        client?.addDestination(RudderBugsnagDestination())
-        client?.track("Track 1")
+        RSClient.sharedInstance().addDestination(RudderBugsnagDestination())
+        RSClient.sharedInstance().track("Track 1")
         
-        client?.identify("test_user_id", traits: ["name": "test_name", "email": "mail@mail.com", "phone": "12345678"])
-        
+        RSClient.sharedInstance().identify("test_user_id", traits: ["name": "test_name", "email": "mail@mail.com", "phone": "12345678"])
+        client = RSClient.sharedInstance()
         return true
     }
 

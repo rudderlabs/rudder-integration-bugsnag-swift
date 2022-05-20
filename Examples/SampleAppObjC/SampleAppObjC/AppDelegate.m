@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 
-@import RudderStack;
+@import Rudder;
 @import RudderBugsnag;
 
 @interface AppDelegate ()
@@ -25,10 +25,10 @@
     [config trackLifecycleEvents:YES];
     [config recordScreenViews:YES];
     
-    RSClient *client = [[RSClient alloc] initWithConfig:config];
+    [[RSClient sharedInstance] configureWith:config];
     
-    [client addDestination:[[RudderBugsnagDestination alloc] init]];
-    [client track:@"Track 1"];
+    [[RSClient sharedInstance] addDestination:[[RudderBugsnagDestination alloc] init]];
+    [[RSClient sharedInstance] track:@"Track 1"];
     
     return YES;
 }

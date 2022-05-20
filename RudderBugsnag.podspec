@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
     s.module_name = 'RudderBugsnag'
     s.swift_version = '5.3'
 
-    s.dependency 'RudderStack'
+    s.dependency 'Rudder', '~> 2.0.0'
     s.dependency 'Bugsnag', '6.16.4'
 end

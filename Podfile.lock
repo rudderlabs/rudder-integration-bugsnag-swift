@@ -1,30 +1,30 @@
 PODS:
   - Bugsnag (6.16.4)
+  - Rudder (2.0.0)
   - RudderBugsnag (1.0.0):
     - Bugsnag (= 6.16.4)
-    - RudderStack
-  - RudderStack (1.0.0-beta.3)
+    - Rudder (~> 2.0.0)
 
 DEPENDENCIES:
   - Bugsnag (= 6.16.4)
+  - Rudder
   - RudderBugsnag (from `.`)
-  - RudderStack (from `~/Documents/Rudder/RudderStack-Swift/`)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Rudder
   trunk:
     - Bugsnag
 
 EXTERNAL SOURCES:
   RudderBugsnag:
     :path: "."
-  RudderStack:
-    :path: "~/Documents/Rudder/RudderStack-Swift/"
 
 SPEC CHECKSUMS:
   Bugsnag: a9dd47687a0c45046abd9edc9fdf04822a8230b9
-  RudderBugsnag: 5215a55bfc314eadc99c200911ea1c82fc08c6f8
-  RudderStack: 7e120a03736b0021f56a504c0966b95ffa9f5bcb
+  Rudder: 7d0ced414a4f7abd9cec6d12206ff93955f7d042
+  RudderBugsnag: 8435a226204cdc22f01bdb8e734a360ea5d41686
 
-PODFILE CHECKSUM: 4d8b23f5ae079a558067c2156ab674e0d93fe4e1
+PODFILE CHECKSUM: c142faec654cb2a4f312f089b57e54263ddabaa1
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

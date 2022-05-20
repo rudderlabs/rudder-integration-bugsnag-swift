@@ -8,7 +8,7 @@
 #if os(iOS) || os(tvOS) || targetEnvironment(macCatalyst) || os(macOS)
 
 import Foundation
-import RudderStack
+import Rudder
 import Bugsnag
 
 class RSBugsnagDestination: RSDestinationPlugin {
