@@ -19,18 +19,20 @@ class RSBugsnagDestination: RSDestinationPlugin {
         
     func update(serverConfig: RSServerConfig, type: UpdateType) {
         guard type == .initial else { return }
-        if let destinations = serverConfig.destinations {
-            if let destination = destinations.first(where: { $0.destinationDefinition?.displayName == self.key }) {
-                if let apiKey = destination.config?.dictionaryValue?["apiKey"] as? String {
-                    Bugsnag.start(withApiKey: apiKey)
-                }
-            }
+        guard let bugsnagConfig: RudderBugsnagConfig = serverConfig.getConfig(forPlugin: self) else {
+            client?.log(message: "Failed to Initialize Bugsnag Factory", logLevel: .warning)
+            return
         }
-    }
+        
+        if !bugsnagConfig.appKey.isEmpty {
+            Bugsnag.start(withApiKey: bugsnagConfig.appKey)
+        }
+        client?.log(message: "Initializing Bugsnag SDK", logLevel: .debug)
+}
     
     func identify(message: IdentifyMessage) -> IdentifyMessage? {
         if let traits = extractTraits(properties: message.traits) {
-            Bugsnag.setUser(message.userId, withEmail: traits["name"] as? String, andName: traits["email"] as? String)
+            Bugsnag.setUser(message.userId, withEmail: traits[RSKeys.Identify.Traits.email] as? String, andName: traits[RSKeys.Identify.Traits.name] as? String)
             for (key, value) in traits {
                 Bugsnag.addMetadata(value, key: key, section: "user")
             }
@@ -45,16 +47,6 @@ class RSBugsnagDestination: RSDestinationPlugin {
     
     func screen(message: ScreenMessage) -> ScreenMessage? {
         Bugsnag.setContext(message.name)
-        return message
-    }
-    
-    func group(message: GroupMessage) -> GroupMessage? {
-        client?.log(message: "MessageType is not supported", logLevel: .warning)
-        return message
-    }
-    
-    func alias(message: AliasMessage) -> AliasMessage? {
-        client?.log(message: "MessageType is not supported", logLevel: .warning)
         return message
     }
     
@@ -73,7 +65,7 @@ extension RSBugsnagDestination {
             params = [String: Any]()
             for (key, value) in properties {
                 switch value {
-                case let v as NSString:
+                case let v as String:
                     params?[key] = v
                 case let v as NSNumber:
                     params?[key] = v
@@ -85,6 +77,17 @@ extension RSBugsnagDestination {
             }
         }
         return params
+    }
+}
+
+struct RudderBugsnagConfig: Codable {
+    private let _appKey: String?
+    var appKey: String {
+        return _appKey ?? ""
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case _appKey = "apiKey"
     }
 }
 

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RudderStack
+import Rudder
 import Bugsnag
 
 class ViewController: UIViewController {
@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        Bugsnag.notifyError(NSError(domain:"com.example", code:409, userInfo:nil))
+        Bugsnag.notifyError(NSError(domain: "com.example", code: 409, userInfo: nil))
     }
 }
-
