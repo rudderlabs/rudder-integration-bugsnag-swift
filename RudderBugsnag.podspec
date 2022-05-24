@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/rudderlabs/rudder-integration-bugsnag-swift'
     s.license          = { :type => "Apache", :file => "LICENSE" }
     s.author           = { 'RudderStack' => 'arnab@rudderlabs.com' }
-    s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-bugsnag-swift.git', :tag => 'v#{s.version}' }
+    s.source           = { :git => 'https://github.com/rudderlabs/rudder-integration-bugsnag-swift.git', :tag => "v#{s.version}" }
     
     s.ios.deployment_target = '13.0'
     s.tvos.deployment_target = '11.0'
