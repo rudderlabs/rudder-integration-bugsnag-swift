@@ -7,8 +7,8 @@
 <p align="center"><b>The Customer Data Platform for Developers</b></p>
 
 <p align="center">
-  <a href="https://cocoapods.org/pods/RudderFirebase">
-    <img src="https://img.shields.io/cocoapods/v/RudderStack.svg?style=flat">
+  <a href="https://cocoapods.org/pods/RudderBugsnag">
+    <img src="https://img.shields.io/cocoapods/v/RudderBugsnag.svg?style=flat">
     </a>
 </p>
 
