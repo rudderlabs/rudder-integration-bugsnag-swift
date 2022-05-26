@@ -35,7 +35,7 @@ For more information on configuring Bugsnag as a destination in RudderStack and 
 ## Step 1: Integrate the SDK with Bugsnag
 
 1. Add Bugsnag as a destination as a destination in the [RudderStack dashboard](https://app.rudderstack.com/).
-2. `Rudder-Bugsnag` is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your `Podfile`:
+2. `RudderBugsnag` is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your `Podfile`:
 
 ```ruby
 pod 'RudderBugsnag', '~> 1.0.0'
