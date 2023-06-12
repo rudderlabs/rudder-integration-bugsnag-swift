@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'RudderBugsnag'
-    s.version          = '1.0.0'
+    s.version          = '1.1.0'
     s.summary          = 'Privacy and Security focused Segment-alternative. Bugsnag Native SDK integration support.'
 
     s.description      = <<-DESC
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
     s.module_name = 'RudderBugsnag'
     s.swift_version = '5.3'
 
-    s.dependency 'Rudder', '~> 2.0.0'
+    s.dependency 'Rudder', '~> 2.0'
     s.dependency 'Bugsnag', '6.16.4'
 end

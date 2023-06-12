@@ -1,13 +1,13 @@
 PODS:
   - Bugsnag (6.16.4)
-  - Rudder (2.0.1)
-  - RudderBugsnag (1.0.0):
+  - Rudder (2.4.0)
+  - RudderBugsnag (1.1.0):
     - Bugsnag (= 6.16.4)
-    - Rudder (~> 2.0.0)
+    - Rudder (~> 2.0)
 
 DEPENDENCIES:
   - Bugsnag (= 6.16.4)
-  - Rudder
+  - Rudder (~> 2.0)
   - RudderBugsnag (from `.`)
 
 SPEC REPOS:
@@ -21,9 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Bugsnag: a9dd47687a0c45046abd9edc9fdf04822a8230b9
-  Rudder: e16a7f96f253e1d9e290a1fe544570e4784fce68
-  RudderBugsnag: e478c3a3d10224842632b7b1f9be8fe6392040b1
+  Rudder: 7595af0282d02a88dd61816415d4b28cba16a195
+  RudderBugsnag: d8d7bd381c255efa6ba4ae9dbd2d43a8528bb074
 
-PODFILE CHECKSUM: c142faec654cb2a4f312f089b57e54263ddabaa1
+PODFILE CHECKSUM: 1e6a2c0c74f8c22dfc7fc021d27e3895eb22aba8
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
