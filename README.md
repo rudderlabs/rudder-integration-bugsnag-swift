@@ -38,7 +38,7 @@ For more information on configuring Bugsnag as a destination in RudderStack and 
 2. `RudderBugsnag` is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your `Podfile`:
 
 ```ruby
-pod 'RudderBugsnag', '~> 1.0.0'
+pod 'RudderBugsnag', '~> 1.1.0'
 ```
 
 3. Run the `pod install` command.
